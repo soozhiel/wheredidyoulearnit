@@ -33,8 +33,6 @@ async function sharePage() {
   await navigator.clipboard.writeText(SITE_URL); showToast('Link copied');
 }
 async function copyPageLink() { await navigator.clipboard.writeText(SITE_URL); showToast('Link copied'); }
-function toggleMobileMenu() { document.getElementById('mobileNav').classList.toggle('open'); }
-function closeMobileMenu() { document.getElementById('mobileNav').classList.remove('open'); }
 function openLightbox(src) {
   document.getElementById('lightboxImg').src = src;
   document.getElementById('lightbox').classList.add('open');
